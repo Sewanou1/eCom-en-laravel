@@ -1,6 +1,6 @@
-<div class="panel panel-default">
-    <div class="panel-body">
+<div class="card">
+    <div class="card-body">
         Panel content
     </div>
-    <div class="panel-footer">Panel footer</div>
+    <div class="card-footer"> Panel footer </div>
 </div>
