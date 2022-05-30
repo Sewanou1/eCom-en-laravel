@@ -23,7 +23,7 @@ if (Session::has('user'))
         </form>
 </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item"><a class="nav-link active" href="#">Cart({{ $total }})</a></li>
+      <li class="nav-item"><a class="nav-link active" href="{{ route('cartList') }}">Cart({{ $total }})</a></li>
         @if(Session::has('user'))
       <li class="dropdown">
         <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">{{ Session::get('user')['name'] }}</a>
