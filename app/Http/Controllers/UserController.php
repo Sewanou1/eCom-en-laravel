@@ -9,14 +9,13 @@ class UserController extends Controller
 {
     //
     public function login(Request $req){
-        $user = User::where('email' , $req->email)->first();
-
+        $user = User::where(['email'=>$req->email])->first();
         if(!$user || !Hash::check($req->password , $user->password))
         {
             return "user name or password is not matched";
         }else{
             $req->session()->put('user',$user);
-            return redirect('/');
+            return redirect()->route('produit_page');
         }
     }
 }

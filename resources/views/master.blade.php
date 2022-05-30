@@ -20,6 +20,37 @@
         height: 500px;
         padding-top: 100px;
     }
+
+    .my-footer{
+        position:relative;
+        width:100%;
+    }
+
+    .slider-text{
+        background-color: #35443585  !important;
+    }
+
+    .tredning-image{
+        height: 100px
+    }
+
+    .trening-item{
+        float: left;
+        width: 20%
+
+    }
+
+    .trending-wrapper{
+        margin:30px;
+    }
+
+    .link_page{
+        text-decoration: none;
+    }
+
+    .search-box{
+        width: 500px !important;
+    }
 </style>
 
 <script>
